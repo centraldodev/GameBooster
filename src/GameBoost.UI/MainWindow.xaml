@@ -1,0 +1,14 @@
+<Window x:Class="GameBoost.UI.MainWindow" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:views="clr-namespace:GameBoost.UI.Views" Title="GameBoost · Central de otimização" Width="1180" Height="800" MinWidth="960" MinHeight="680">
+<Grid Margin="28"><Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
+<Grid Margin="0,0,0,20"><Grid.ColumnDefinitions><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions><StackPanel><TextBlock Text="GAMEBOOST" FontSize="28" FontWeight="Bold" Foreground="#C2F970"/><TextBlock Text="Seu jogo. Seus ajustes. Tudo sob controle." Foreground="#A8B6CC"/></StackPanel><Button Grid.Column="1" Content="Restaurar tudo" Command="{Binding RestoreCommand}" VerticalAlignment="Center"/></Grid>
+<TabControl Grid.Row="1">
+<TabItem Header="Jogos"><views:GamesView/></TabItem>
+<TabItem Header="Sistema"><views:SystemView/></TabItem>
+<TabItem Header="Aplicativos"><views:ApplicationsView/></TabItem>
+<TabItem Header="Rede"><views:NetworkView/></TabItem>
+<TabItem Header="Monitor"><views:MonitorView/></TabItem>
+<TabItem Header="Benchmark"><views:BenchmarkView/></TabItem>
+<TabItem Header="Restauração"><views:RestoreView/></TabItem>
+</TabControl>
+<Border Grid.Row="2" Background="#202D40" Padding="14" CornerRadius="8" Margin="0,16,0,0"><TextBlock Text="{Binding Status}" Margin="0" Foreground="#D3DFEF"/></Border>
+</Grid></Window>

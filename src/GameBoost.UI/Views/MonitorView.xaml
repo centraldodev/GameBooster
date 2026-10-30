@@ -1,0 +1,3 @@
+<UserControl x:Class="GameBoost.UI.Views.MonitorView" xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<StackPanel><TextBlock Text="Desempenho em tempo real" FontSize="24" FontWeight="SemiBold"/><TextBlock Text="Em desenvolvimento · nenhum sensor conectado" Foreground="#C2F970"/><TextBlock Text="O benchmark já coleta CPU, RAM e rede por sessão. Esta aba de monitor contínuo ainda aguarda gráficos, disco e captura automática de FPS/frametime via PresentMon/ETW."/><TextBlock Text="A leitura de sensores por driver ficará desativada no Modo Seguro. Os gráficos serão exibidos quando houver medições reais." Foreground="#A8B6CC"/></StackPanel>
+</UserControl>

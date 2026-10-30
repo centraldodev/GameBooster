@@ -1,0 +1,1 @@
+<Project Sdk="Microsoft.NET.Sdk"><ItemGroup><ProjectReference Include="../GameBoost.Core/GameBoost.Core.csproj"/><ProjectReference Include="../GameBoost.Data/GameBoost.Data.csproj"/></ItemGroup></Project>
